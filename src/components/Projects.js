@@ -9,9 +9,9 @@ const Projects = ({ projetNumber }) => {
   const [size, setSize] = useState();
 
     useEffect(() => {
-        setLeft(Math.floor(Math.random() * 200 + 700) + "px");
-        setTop(Math.floor(Math.random() * 200 + 150) + "px");
-        setSize("scale(" + (Math.random() + 0.7) + ")");
+       setLeft(Math.floor(Math.random() * 200 + 700) + "px");
+       setTop(Math.floor(Math.random() * 200 + 150) + "px");
+       setSize("scale(" + (Math.random() + 0.7) + ")");
     }, [])
 
   console.log(curentProjet);

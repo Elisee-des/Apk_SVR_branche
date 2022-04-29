@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Contact from './pages/Contact';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Projet1 from './pages/Projet1';
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/projet-2' element={<Projet2 />} />
         <Route path='/projet-3' element={<Projet3 />} />
         <Route path='/projet-4' element={<Projet4 />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
