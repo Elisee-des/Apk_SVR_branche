@@ -21,7 +21,7 @@ const Home = () => {
                     </div>
                 </div>
 
-            <Button right={"/projet-1"} />
+                <Button rigth={"/projet-1"}  />
             </div>
         </div>
     );

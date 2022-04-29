@@ -1,14 +1,20 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-const Button = () => {
+const Button = (props) => {
+
     return (
         <div className="scroll-bottom">
-            <NavLink to="" className="left hover">
+            {props.left && 
+            <NavLink to={props.left} className="left hover">
                 <span>&#10092;</span>
             </NavLink>
-            <NavLink to="" className="right hover">
+            }
+            {props.rigth && 
+            <NavLink to={props.rigth} className="right hover">
                 <span>&#10093;</span>
             </NavLink>
+            }
         </div>
     );
 };
